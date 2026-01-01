@@ -1303,15 +1303,15 @@ body, html {
 
     /* 3. Scale the circle down slightly for small screens */
     .progress-ring {
-        width: 140px !important; 
-        height: 140px !important;
+        width: 80px !important; 
+        height: 80px !important;
         margin-bottom: 20px !important;
     }
 
     /* 4. Force the SVG inside to fit the new smaller container */
     .progress-ring svg {
-        width: 100% !important;
-        height: 100% !important;
+        width: 50% !important;
+        height: 50% !important;
     }
 
     /* 5. Adjust text sizes so they don't look too big on phone */

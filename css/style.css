@@ -1284,7 +1284,7 @@ body, html {
 }
 
 /* This code only runs on screens smaller than 768px (Phones) */
-@media (max-width: 768px) {
+@media (max-width: 576px) {
     /* 1. Stack the cards vertically */
     .stats-grid {
         display: flex !important;
@@ -1336,8 +1336,8 @@ body, html {
 
     /* 2. Scale the circle container so it fits the phone screen */
     .progress-ring {
-        width: 100px !important; /* Smaller size for mobile */
-        height: 100px !important;
+        width: 70px !important; /* Smaller size for mobile */
+        height: 70px !important;
         margin: 0 auto !important;
         display: flex;
         justify-content: center;
@@ -1346,8 +1346,8 @@ body, html {
 
     /* 3. THE KEY FIX: Force the SVG to shrink and not cut off */
     .progress-ring svg {
-        width: 80% !important;
-        height: 80% !important;
+        width: 70% !important;
+        height: 70% !important;
         overflow: visible !important; /* Ensures stroke-width isn't clipped */
     }
 

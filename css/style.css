@@ -1336,8 +1336,8 @@ body, html {
 
     /* 2. Scale the circle container so it fits the phone screen */
     .progress-ring {
-        width: 150px !important; /* Smaller size for mobile */
-        height: 150px !important;
+        width: 100px !important; /* Smaller size for mobile */
+        height: 100px !important;
         margin: 0 auto !important;
         display: flex;
         justify-content: center;
@@ -1346,8 +1346,8 @@ body, html {
 
     /* 3. THE KEY FIX: Force the SVG to shrink and not cut off */
     .progress-ring svg {
-        width: 100% !important;
-        height: 100% !important;
+        width: 80% !important;
+        height: 80% !important;
         overflow: visible !important; /* Ensures stroke-width isn't clipped */
     }
 

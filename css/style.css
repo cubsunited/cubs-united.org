@@ -1385,9 +1385,9 @@ body, html {
         flex-direction: column !important;
         align-items: center !important; /* Centers the circle and text */
         text-align: center !important;
-        width: 100% !important;
-        max-width: 100% !important;
-        margin: 0 auto 40px auto !important; /* Centers the card block itself */
+        width: 60% !important;
+        max-width: 60% !important;
+        margin: 0 auto 30px auto !important; /* Centers the card block itself */
     }
 
     /* 3. Center the Progress Ring div */

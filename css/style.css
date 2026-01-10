@@ -1364,3 +1364,44 @@ body, html {
     }
 }
 }
+
+/* This part only activates on screens smaller than 768px (Mobile) */
+@media screen and (max-width: 768px) {
+    
+    /* 1. Center the container holding all the cards */
+    .stat-card {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important; /* Centers the circle and text */
+        justify-content: center !important;
+        text-align: center !important;
+        margin: 0 auto 40px auto !important; /* Adds space between cards */
+        width: 100% !important;
+    }
+
+    /* 2. Center the SVG circle specifically */
+    .progress-ring {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        position: relative !important;
+        margin-bottom: 15px !important;
+    }
+
+    /* 3. Keep the percentage number perfectly in the middle of the ring */
+    .progress-ring .number {
+        position: absolute !important;
+        left: 50% !important;
+        top: 50% !important;
+        transform: translate(-50%, -50%) !important;
+        margin: 0 !important;
+        width: auto !important;
+    }
+
+    /* 4. Ensure the SVG doesn't overflow the screen */
+    .progress-ring svg {
+        display: block !important;
+        margin: 0 auto !important;
+    }
+}
+

@@ -1285,7 +1285,7 @@ body, html {
         flex-direction: column !important;
         align-items: center !important;
         width: 100% !important;
-        margin: 70 auto !important;
+        margin: 80 auto !important;
     }
 
     /* 2. Fix the Card width */
@@ -1294,7 +1294,7 @@ body, html {
         flex-direction: column !important; /* Fixed 'center' to 'column' */
         align-items: center !important;
         width: 30% !important; /* Use 100% so the text doesn't squeeze */
-        margin: 0 auto 40px auto !important;
+        margin: 0 auto 20px auto !important;
     }
 
     /* 3. FIX: Match container size to SVG size */

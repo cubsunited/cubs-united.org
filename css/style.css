@@ -1277,7 +1277,7 @@ body, html {
     transform: translateY(-10px) !important;
 }
 
-@media screen and (max-width: 708px) {
+@media screen and (max-width: 748px) {
     
     /* 1. Reset the grid */
     .stats-grid {
@@ -1293,8 +1293,8 @@ body, html {
         display: flex !important;
         flex-direction: column !important; /* Fixed 'center' to 'column' */
         align-items: center !important;
-        width: 30% !important; /* Use 100% so the text doesn't squeeze */
-        margin: 0 auto 20px auto !important;
+        width: 60% !important; /* Use 100% so the text doesn't squeeze */
+        margin: 0 auto 0px auto !important;
     }
 
     /* 3. FIX: Match container size to SVG size */

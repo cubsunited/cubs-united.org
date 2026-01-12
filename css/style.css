@@ -1296,16 +1296,16 @@ body, html {
 
     /* 2. Ensure each card takes full width but doesn't overflow */
     .stat-card {
-        width: 100% !important;
+        width: 50% !important;
         max-width: 320px !important;
         margin: 0 auto !important;
     }
 
     /* 3. Scale the circle down slightly for small screens */
     .progress-ring {
-        width: 80px !important; 
-        height: 80px !important;
-        margin-bottom: 20px !important;
+        width: 50px !important; 
+        height: 50px !important;
+        margin-bottom: 120px !important;
     }
 
     /* 4. Force the SVG inside to fit the new smaller container */
@@ -1364,55 +1364,3 @@ body, html {
     }
 }
 }
-
-/* Only affects screens smaller than 768px (Mobile) */
-@media screen and (max-width: 768px) {
-    
-    /* 1. Force the grid to center its children */
-    .stats-grid {
-        display: flex !important;
-        flex-direction: column !important;
-        align-items: center !important; /* This centers the cards horizontally */
-        justify-content: center !important;
-        width: 100% !important;
-        padding: 0 !important;
-        margin: 0 auto !important;
-    }
-
-    /* 2. Force each individual card to center its own content */
-    .stat-card {
-        display: flex !important;
-        flex-direction: column !important;
-        align-items: center !important; /* Centers the circle and text */
-        text-align: center !important;
-        width: 60% !important;
-        max-width: 60% !important;
-        margin: 0 auto 30px auto !important; /* Centers the card block itself */
-    }
-
-    /* 3. Center the Progress Ring div */
-    .progress-ring {
-        display: flex !important;
-        justify-content: center !important;
-        align-items: center !important;
-        margin: 0 auto 15px auto !important; /* 'auto' left/right is key for centering */
-        width: 180px !important; /* Match your SVG width */
-        position: relative !important;
-    }
-
-    /* 4. Fix the Number position inside the circle */
-    .progress-ring .number {
-        position: absolute !important;
-        left: 50% !important;
-        top: 50% !important;
-        transform: translate(-50%, -50%) !important;
-        margin: 0 !important;
-    }
-
-    /* 5. Ensure the SVG doesn't float or align left */
-    .progress-ring svg {
-        display: block !important;
-        margin: 0 auto !important;
-    }
-}
-

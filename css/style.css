@@ -1285,7 +1285,7 @@ body, html {
         flex-direction: column !important;
         align-items: center !important;
         width: 100% !important;
-        margin: 80 auto !important;
+        margin: 100 auto !important;
     }
 
     /* 2. Fix the Card width */

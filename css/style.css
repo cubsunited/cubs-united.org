@@ -1285,7 +1285,7 @@ body, html {
         flex-direction: column !important;
         align-items: center !important;
         width: 100% !important;
-        margin: 0 auto !important;
+        margin: 50 auto !important;
     }
 
     /* 2. Fix the Card width */
@@ -1293,7 +1293,7 @@ body, html {
         display: flex !important;
         flex-direction: column !important; /* Fixed 'center' to 'column' */
         align-items: center !important;
-        width: 100% !important; /* Use 100% so the text doesn't squeeze */
+        width: 30% !important; /* Use 100% so the text doesn't squeeze */
         margin: 0 auto 40px auto !important;
     }
 

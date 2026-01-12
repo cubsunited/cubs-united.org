@@ -1282,85 +1282,54 @@ body, html {
     .lion-theme-container { flex-direction: column; align-items: center; }
     .lion-theme-card { margin-bottom: 60px; width: 100%; }
 }
-
-/* This code only runs on screens smaller than 768px (Phones) */
-@media (max-width: 576px) {
-    /* 1. Stack the cards vertically */
+/* Only affects screens smaller than 768px (Mobile) */
+@media screen and (max-width: 768px) {
+    
+    /* 1. Force the grid to center its children */
     .stats-grid {
         display: flex !important;
         flex-direction: column !important;
-        align-items: center !important;
-        gap: 40px !important; /* Adds space between stacked cards */
-        padding: 0 20px !important;
-    }
-
-    /* 2. Ensure each card takes full width but doesn't overflow */
-    .stat-card {
-        width: 50% !important;
-        max-width: 320px !important;
+        align-items: center !important; /* This centers the cards horizontally */
+        justify-content: center !important;
+        width: 100% !important;
+        padding: 0 !important;
         margin: 0 auto !important;
     }
 
-    /* 3. Scale the circle down slightly for small screens */
-    .progress-ring {
-        width: 50px !important; 
-        height: 50px !important;
-        margin-bottom: 120px !important;
-    }
-
-    /* 4. Force the SVG inside to fit the new smaller container */
-    .progress-ring svg {
-        width: 50% !important;
-        height: 50% !important;
-    }
-
-    /* 5. Adjust text sizes so they don't look too big on phone */
-    .stat-card h3 {
-        font-size: 1.1rem !important;
-        margin-top: 10px !important;
-    }
-
-    .stat-card p {
-        font-size: 0.95rem !important;
-        line-height: 1.4 !important;
-    }
-    @media (max-width: 576px) {
-    /* 1. Prevent the container from cutting off */
-    .stats-grid {
+    /* 2. Force each individual card to center its own content */
+    .stat-card {
         display: flex !important;
-        flex-direction: column !important;
-        align-items: center !important;
-        overflow: hidden !important; /* Prevents side-scrolling */
-        width: 100% !important;
+        flex-direction: center !important;
+        align-items: center !important; /* Centers the circle and text */
+        text-align: center !important;
+        width: 50% !important;
+        max-width: 50% !important;
+        margin: 0 auto 40px auto !important; /* Centers the card block itself */
     }
 
-    /* 2. Scale the circle container so it fits the phone screen */
+    /* 3. Center the Progress Ring div */
     .progress-ring {
-        width: 70px !important; /* Smaller size for mobile */
-        height: 70px !important;
-        margin: 0 auto !important;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        margin: 50px auto 50px auto !important; /* 'auto' left/right is key for centering */
+        width: 50px !important; /* Match your SVG width */
+        position: relative !important;
     }
 
-    /* 3. THE KEY FIX: Force the SVG to shrink and not cut off */
+    /* 4. Fix the Number position inside the circle */
+    .progress-ring .number {
+        position: absolute !important;
+        left: 50% !important;
+        top: 50% !important;
+        transform: translate(-20%, -20%) !important;
+        margin: 0 !important;
+    }
+
+    /* 5. Ensure the SVG doesn't float or align left */
     .progress-ring svg {
-        width: 70% !important;
-        height: 70% !important;
-        overflow: visible !important; /* Ensures stroke-width isn't clipped */
-    }
-
-    /* 4. Adjust the circle stroke so it doesn't look too thick on phone */
-    .progress-ring circle {
-        stroke-width: 10 !important; 
-    }
-
-    /* 5. Center and space the cards */
-    .stat-card {
-        width: 100% !important;
-        margin-bottom: 30px !important;
-        padding: 0 10px !important;
+        display: block !important;
+        margin: 0 auto !important;
     }
 }
-}
+

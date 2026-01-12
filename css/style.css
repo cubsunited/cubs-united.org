@@ -1329,7 +1329,7 @@ body, html {
     /* 5. Ensure the SVG doesn't float or align left */
     .progress-ring svg {
         display: block !important;
-        margin: 0 auto !important;
+        margin: 50% auto !important;
     }
 }
 
